@@ -41,12 +41,12 @@ iso8601==	2.1.0
 itsdangerous==2.1.2
 jedi==0.19.1
 Jinja2==3.1.2
-joblib==1.4.5
-jupyter_client==6.1.12
-jupyter_core==5.5.0
+joblib==1.3.2
+jupyter_client==7.3.1
+jupyter_core==6.4.12
 keep==2.1.0
-kiwisolver==1.4.5
-lxml==4.9.2
+kiwisolver==1.3.7
+lxml==4.8.6
 m3u8==3.5.0
 markdown-it-py==2.2.0
 MarkupSafe==2.0.1
