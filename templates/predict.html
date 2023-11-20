@@ -72,28 +72,28 @@
       <div class="form-div">
         <form action="/predict" method="post">
           <label for="selectBrand">Brand:</label>
-          <select id="selectBrand" name="Brand">
+          <select id="selectBrand" name="Brand" required>
             <option value="" disabled selected>Select a brand</option>
           </select>
           <br />
           <br />
 
           <label for="selectModel">Model:</label>
-          <select id="selectModel" name="Model">
+          <select id="selectModel" name="Model" required>
             <option value="" disabled selected>Select a Model</option>
           </select>
           <br />
           <br />
 
           <label for="selectOs">Operating System:</label>
-          <select id="selectOs" name="OS">
+          <select id="selectOs" name="OS" required>
             <option value="" disabled selected>Select a Operaing System</option>
           </select>
           <br />
           <br />
 
           <label for="selectConnectivity">Connectivity:</label>
-          <select id="selectConnectivity" name="Connectivity">
+          <select id="selectConnectivity" name="Connectivity" required>
             <option value="" disabled selected>
               Select a Connectivity Type
             </option>
@@ -102,19 +102,19 @@
           <br />
 
           <label for="selectDisplay">Display Type:</label>
-          <select id="selectDisplay" name="DisplayType">
+          <select id="selectDisplay" name="Display Type" required>
             <option value="" disabled selected>Select a Display Type</option>
           </select>
           <br />
           <br />
 
           <label for="displaySize">Display Size (inches) :</label>
-          <input type="text" id="displaySize" name="DisplaySize" />
+          <input type="text" id="displaySize" name="Display Size" required />
           <br />
           <br />
 
           <label for="selectResolution">Display Resolution:</label>
-          <select id="selectResolution" name="Resolution">
+          <select id="selectResolution" name="Resolution" required>
             <option value="" disabled selected>
               Select a Display Resolution
             </option>
@@ -123,31 +123,36 @@
           <br />
 
           <label for="selectHRM">Do You Need Heart Rate Monitoring ?:</label>
-          <select id="selectHRM" name="HRM">
+          <select id="selectHRM" name="Heart Rate Monitor" required>
             <option value="" disabled selected>Select an option</option>
           </select>
           <br />
           <br />
 
           <label for="waterResistance">Water Resistance (meters) :</label>
-          <input type="text" id="waterResistance" name="waterResistance" />
+          <input
+            type="text"
+            id="waterResistance"
+            name="Water Resistance"
+            required
+          />
           <br />
           <br />
 
           <label for="batteryLife">Battery Life (days) :</label>
-          <input type="text" id="batteryLife" name="batteryLife" />
+          <input type="text" id="batteryLife" name="Battery Life" required />
           <br />
           <br />
 
           <label for="selectGPS">Do You Need GPS ?:</label>
-          <select id="selectGPS" name="GPS">
+          <select id="selectGPS" name="GPS" required>
             <option value="" disabled selected>Select an option</option>
           </select>
           <br />
           <br />
 
           <label for="selectNFC">Do You Need NFC ?:</label>
-          <select id="selectNFC" name="NFC">
+          <select id="selectNFC" name="NFC" required>
             <option value="" disabled selected>Select an option</option>
           </select>
           <br />
