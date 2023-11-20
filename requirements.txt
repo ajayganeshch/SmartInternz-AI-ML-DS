@@ -58,7 +58,7 @@ mysql-connector-python>==8.0.29
 nest-asyncio==1.5.4
 numpy==1.21.6
 openai==0.26.0
-opencage==0.2.1
+opencage==2.3.1
 outcome==1.1.1
 packaging==23.0
 pandas==1.4.3
