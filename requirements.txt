@@ -111,5 +111,5 @@ webdriver-manager
 Werkzeug
 wrapt
 wsproto
-xgboost==2.0.2
+xgboost==1.6.2
 yarl
