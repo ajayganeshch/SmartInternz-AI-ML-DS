@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartWatch Price Prediction</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 97vh;
+    }
+    .main-div {
+      display: flex;
+      justify-content: space-around;
+    }
+    .btn-class {
+      display: flex;
+      align-items: center;
+    }
+    a {
+      padding: 20px;
+      color: whitesmoke;
+      font-size: larger;
+      background-color: rgb(255, 0, 0);
+      cursor: pointer;
+    }
+    a::after {
+      content: "";
+      border: solid;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    img {
+      margin-top: 20px;
+      width: 500px;
+      height: auto;
+    }
+    .img-div {
+      margin-right: -60px;
+    }
+    .curved {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: #45f8e3;
+      z-index: -1;
+    }
+
+    .curved::after {
+      content: "";
+      border-top-left-radius: 50% 100%;
+      border-top-right-radius: 50% 100%;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: #fff;
+      height: 7%;
+    }
+    p {
+      text-align: center;
+      font-size: xx-large;
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: larger;
+    }
+  </style>
+  <body>
+    <section class="curved"></section>
+    <p>Welcome! SmartWatch Prediction</p>
+    <div class="main-div">
+      <div class="btn-class">
+        <a href="{{ url_for('predict') }}" target="_blank">Predict Value -</a>
+      </div>
+      <div class="img-div">
+        <img src="../static/watch.jpg" />
+      </div>
+    </div>
+    <footer>Copyright Deservers ©️, 💖 By Team-593067</footer>
+  </body>
+</html>

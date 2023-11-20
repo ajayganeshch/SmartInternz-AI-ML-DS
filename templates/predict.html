@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Predict Value</title>
+    <style>
+      body {
+        background-color: #202020;
+        color: white;
+        font-size: medium;
+      }
+      .form-div {
+        width: 50%;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 32px 0 rgba(237, 237, 241, 0.2);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+      label {
+        margin-right: 10px;
+      }
+      h1 {
+        text-align: center;
+      }
+      h1,
+      .form-div {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      .submit-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn {
+        text-align: center;
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        font-size: large;
+      }
+      .btn:hover {
+        background-color: greenyellow;
+      }
+      .main-div {
+        display: grid;
+        place-items: center;
+        margin-bottom: 15px;
+      }
+      h3 {
+        margin-top: 0;
+      }
+      footer {
+        margin-top: auto;
+        text-align: center;
+        font-size: larger;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Just Enter The Details And Get SmartWatch Price Prediction Value 🎉</h1>
+    <div class="main-div">
+      <div class="form-div">
+        <form action="/predict" method="post">
+          <label for="selectBrand">Brand:</label>
+          <select id="selectBrand" name="Brand">
+            <option value="" disabled selected>Select a brand</option>
+          </select>
+          <br />
+          <br />
+
+          <label for="selectModel">Model:</label>
+          <select id="selectModel" name="Model">
+            <option value="" disabled selected>Select a Model</option>
+          </select>
+          <br />
+          <br />
+
+          <label for="selectOs">Operating System:</label>
+          <select id="selectOs" name="OS">
+            <option value="" disabled selected>Select a Operaing System</option>
+          </select>
+          <br />
+          <br />
+
+          <label for="selectConnectivity">Connectivity:</label>
+          <select id="selectConnectivity" name="Connectivity">
+            <option value="" disabled selected>
+              Select a Connectivity Type
+            </option>
+          </select>
+          <br />
+          <br />
+
+          <label for="selectDisplay">Display Type:</label>
+          <select id="selectDisplay" name="DisplayType">
+            <option value="" disabled selected>Select a Display Type</option>
+          </select>
+          <br />
+          <br />
+
+          <label for="displaySize">Display Size (inches) :</label>
+          <input type="text" id="displaySize" name="DisplaySize" />
+          <br />
+          <br />
+
+          <label for="selectResolution">Display Resolution:</label>
+          <select id="selectResolution" name="Resolution">
+            <option value="" disabled selected>
+              Select a Display Resolution
+            </option>
+          </select>
+          <br />
+          <br />
+
+          <label for="selectHRM">Do You Need Heart Rate Monitoring ?:</label>
+          <select id="selectHRM" name="HRM">
+            <option value="" disabled selected>Select an option</option>
+          </select>
+          <br />
+          <br />
+
+          <label for="waterResistance">Water Resistance (meters) :</label>
+          <input type="text" id="waterResistance" name="waterResistance" />
+          <br />
+          <br />
+
+          <label for="batteryLife">Battery Life (days) :</label>
+          <input type="text" id="batteryLife" name="batteryLife" />
+          <br />
+          <br />
+
+          <label for="selectGPS">Do You Need GPS ?:</label>
+          <select id="selectGPS" name="GPS">
+            <option value="" disabled selected>Select an option</option>
+          </select>
+          <br />
+          <br />
+
+          <label for="selectNFC">Do You Need NFC ?:</label>
+          <select id="selectNFC" name="NFC">
+            <option value="" disabled selected>Select an option</option>
+          </select>
+          <br />
+          <br />
+
+          <h3>
+            Note: If you select a brand and a model that doesn't belong to that
+            brand, it's like a hypothesis. You are testing to estimate what the
+            price might be.
+          </h3>
+
+          <div class="submit-btn"><input class="btn" type="submit" /></div>
+        </form>
+      </div>
+    </div>
+    <footer>Copyright Deservers ©️, 💖 By Team-593067</footer>
+    <script src="../static/script.js"></script>
+  </body>
+</html>
