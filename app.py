@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-  return render_template('watch_prediction.html')
+  return render_template('index.html')
 
 @app.route('/predict.html', methods=['GET'])
 def predict():
