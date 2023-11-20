@@ -36,13 +36,14 @@ def predict1():
 
    variables = [brand, model, os,connectivity,displayType,displaySize,resolution,waterresistance,batterylife,hrm,gps,nfc]
 
-   x = [[float(var) for var in variables]]
+   x = pd.DataFrame([variables], columns=['Brand', 'Model', 'OS', 'Connectivity', 'DisplayType', 'DisplaySize', 'Resolution', 'waterResistance', 'batteryLife', 'HRM', 'GPS', 'NFC'])
 
-   x_sclaed = scalar.transform(x)
-   output = main_model.predict(x_sclaed)
+   x_scaled = scalar.transform(x)
+   output = main_model.predict(x_scaled)
    print(output)
 
    return render_template('watch_prediction.html', result="Based On Your Inputs The Prediction is: " + str(np.round(output[0])))
+
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
