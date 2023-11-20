@@ -27,7 +27,7 @@ Deprecated==1.2.14
 distlib==0.3.7
 exceptiongroup==1.0.0rc9
 executing==1.2.0
-filelock==3.13.1
+filelock==3.12.2
 Flask==3.0.0
 flask-ngrok==0.0.25
 fonttools==4.41.0
