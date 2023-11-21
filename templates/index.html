@@ -65,19 +65,66 @@
       height: 7%;
     }
     p {
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: xx-large;
       text-decoration: underline;
+      background-color: burlywood;
+      width: 100%;
+      height: 50px;
     }
     footer {
       margin-top: auto;
       text-align: center;
       font-size: larger;
     }
+
+    @media only screen and (max-width: 900px) {
+      /* For mobile phones: */
+      body {
+        display: block;
+        zoom: 95%;
+        min-height: 100vh;
+      }
+      img {
+        width: 90%;
+        max-width: none;
+      }
+      .main-div {
+        display: block;
+        margin-top: 30px;
+        margin-left: 20px;
+      }
+      p {
+        text-align: center;
+        font-size: large;
+        text-decoration: underline;
+        /* padding: 0; */
+        /* margin: 0; */
+      }
+      /* .p-div {
+        justify-content: center;
+      } */
+      /* footer {
+        margin-bottom: -40px;
+        margin-left: 40px;
+      } */
+      .img-div {
+        margin-top: 20px;
+      }
+      footer {
+        position: fixed;
+        bottom: 10px;
+        left: 35px;
+      }
+    }
   </style>
   <body>
     <section class="curved"></section>
-    <p>Welcome! SmartWatch Prediction</p>
+    <div class="p-div">
+      <p>Welcome! SmartWatch Prediction</p>
+    </div>
     <div class="main-div">
       <div class="btn-class">
         <a href="{{ url_for('predict') }}" target="_blank">Predict Value -</a>
